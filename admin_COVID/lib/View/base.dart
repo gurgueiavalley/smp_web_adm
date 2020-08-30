@@ -57,7 +57,10 @@ class Tela_BaseState extends State<TelaBase> {
             extended: MediaQuery.of(context).size.width >= 1000 ? true : false,
             onDestinationSelected: (int index) {
               setState(() {
-                _selectedIndex = index;
+                if (index == 2) {
+                  Navigator.pushReplacementNamed(context, '/');
+                }
+                _selectedIndex = index != 2 ? index : _selectedIndex;
                 print(index);
               });
             },
@@ -111,11 +114,6 @@ class Tela_BaseState extends State<TelaBase> {
         return TelaCliente();
       case 1:
         return TelaListarInstituicao();
-        break;
-      case 2:
-        //Navigator.pushReplacement(
-        //context, MaterialPageRoute(builder: (context) => SignInCliente()));
-        Navigator.pushReplacementNamed(context, '/');
         break;
       default:
     }

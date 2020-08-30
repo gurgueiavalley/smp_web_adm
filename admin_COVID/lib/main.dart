@@ -6,6 +6,8 @@ import 'package:admin_chat/View/tela_login_adm.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase/firebase.dart' as fb;
 
+import 'View/base.dart';
+
 void main() {
   fb.initializeApp(
       apiKey: "AIzaSyCRAYn-Jx1dG0612uijdGTyLd_27aGZWBo",
@@ -35,6 +37,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => SignInADM(),
+        'base': (context) => TelaBase(),
         'cadastrar_cliente': (context) => TelaCadCliente(),
         'cadastrar_instituicao': (context) => TelaInstituicao(),
         'alterar_cliente': (context) => TelaAlterarCliente(
