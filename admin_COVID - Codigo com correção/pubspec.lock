@@ -176,8 +176,7 @@ packages:
       name: hive
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
-    version: "1.4.3"
+    version: "1.4.4"
   html:
     dependency: transitive
     description:
@@ -185,9 +184,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.14.0+3"
-=======
-    version: "1.4.4"
->>>>>>> 1d49e30b503d3a3768a15042818bef818e3b5eff
   http:
     dependency: transitive
     description:
@@ -437,7 +433,6 @@ packages:
       name: xdg_directories
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.1.0"
   zone_local:
     dependency: transitive
@@ -445,8 +440,6 @@ packages:
       name: zone_local
       url: "https://pub.dartlang.org"
     source: hosted
-=======
->>>>>>> 1d49e30b503d3a3768a15042818bef818e3b5eff
     version: "0.1.2"
 sdks:
   dart: ">=2.10.0-0.0.dev <2.10.0"
